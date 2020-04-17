@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PeriodInfoView renders correctly 1`] = `
+<div
+  className="sc-AxjAm eHxihg"
+>
+  Você está vendo o período 
+  <strong>
+    desde o início
+  </strong>
+  .
+</div>
+`;
