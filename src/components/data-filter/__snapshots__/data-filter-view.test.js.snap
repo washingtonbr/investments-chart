@@ -2,10 +2,10 @@
 
 exports[`DataFilterView renders correctly 1`] = `
 <div
-  className="sc-AxjAm iOWkxF"
+  className="sc-AxjAm sjXNp"
 >
   <select
-    className="sc-AxirZ gdDDhx"
+    className="sc-AxirZ ka-doDy"
   >
     <option
       className="sc-AxiKw kgEfKZ"

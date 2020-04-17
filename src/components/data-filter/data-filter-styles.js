@@ -5,16 +5,16 @@ export const SelectWrapper = styled.div`
   width: 110px;
   overflow: hidden;
   position: relative;
-  
+
   &::after {
     display: block;
     position: absolute;
     content: 'Período';
     top: 0;
     left: 40px;
-    font-size: 20px;
+    font-size: 18px;
     height: 28px;
-    line-height: 32px;
+    line-height: 28px;
     z-index: 8;
     font-weight: 600;
   }
@@ -26,6 +26,7 @@ export const Select = styled.select`
   border: 0;
   outline: 0;
   background: url(${IconCalendar}) no-repeat center left;
+  background-size: 28px;
   text-indent: -9999px;
   z-index: 9;
   position: relative;
