@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataFilterView renders correctly 1`] = `
+<div
+  className="sc-AxjAm iOWkxF"
+>
+  <select
+    className="sc-AxirZ gdDDhx"
+  >
+    <option
+      className="sc-AxiKw kgEfKZ"
+      selected={true}
+    >
+      Desde o início
+    </option>
+    <option
+      className="sc-AxiKw kgEfKZ"
+    >
+      Último mês
+    </option>
+    <option
+      className="sc-AxiKw kgEfKZ"
+    >
+      3 meses
+    </option>
+    <option
+      className="sc-AxiKw kgEfKZ"
+    >
+      1 ano
+    </option>
+    <option
+      className="sc-AxiKw kgEfKZ"
+    >
+      2 anos
+    </option>
+  </select>
+</div>
+`;
