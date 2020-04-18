@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvestmentsChart renders correctly 1`] = `
+<div
+  className="sc-AxhUy bnBzHX"
+>
+  <div
+    className="sc-AxgMl jDCFvF"
+  >
+    <div
+      className="sc-AxjAm bDujyt"
+    >
+      <select
+        className="sc-AxirZ iEPwaG"
+      >
+        <option
+          className="sc-AxiKw kgEfKZ"
+        >
+          Desde o início
+        </option>
+        <option
+          className="sc-AxiKw kgEfKZ"
+        >
+          Último mês
+        </option>
+        <option
+          className="sc-AxiKw kgEfKZ"
+        >
+          3 meses
+        </option>
+        <option
+          className="sc-AxiKw kgEfKZ"
+        >
+          1 ano
+        </option>
+        <option
+          className="sc-AxiKw kgEfKZ"
+        >
+          2 anos
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    className="sc-AxhCb duiJp"
+  >
+    Você está vendo o período 
+    <strong>
+      desde o início
+    </strong>
+    .
+  </div>
+  <canvas
+    height={55}
+    width={100}
+  />
+</div>
+`;

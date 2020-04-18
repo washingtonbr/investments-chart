@@ -1,1 +1,1 @@
-export { default } from './investments-view';
+export { default } from './investments-container';
