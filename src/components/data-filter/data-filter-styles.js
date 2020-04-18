@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import IconCalendar from '../../images/icon-calendar.svg';
 
 export const SelectWrapper = styled.div`
-  width: 110px;
-  overflow: hidden;
   position: relative;
 
   &::after {
@@ -21,10 +19,11 @@ export const SelectWrapper = styled.div`
 `;
 
 export const Select = styled.select`
-  width: 125px;
+  width: 115px;
   height: 28px;
   border: 0;
   outline: 0;
+  appearance: none;
   background: url(${IconCalendar}) no-repeat center left;
   background-size: 28px;
   text-indent: -9999px;
