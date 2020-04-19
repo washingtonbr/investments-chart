@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import { addDecorator } from '@storybook/react';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux'
-import { Wrapper } from '../src/components/app/app-styles';
+import { Wrapper } from '../src/components/app/app-view.styles';
 import { mockInitialState } from '../src/redux/store.mock';
 
 const middlewares = [thunk];
