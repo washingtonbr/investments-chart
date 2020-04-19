@@ -6,6 +6,8 @@ import {
   mockData,
 } from './investments-chart-view.mock';
 
+jest.mock('../../utils/date');
+
 describe('InvestmentsChart', () => {
   it('renders correctly', () => {
     const tree = renderer
