@@ -25,3 +25,5 @@ export const mockData = [
   54866.23,
   84750.88,
 ];
+
+export const mockisFetching = false;
