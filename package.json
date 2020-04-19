@@ -3,23 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-actions": "5.3.18",
-    "@storybook/react": "5.3.18",
     "chart.js": "2.9.3",
-    "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.2",
     "moment": "2.24.0",
     "normalize.css": "8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "7.2.0",
     "react-router-dom": "5.1.2",
-    "react-scripts": "3.4.1",
     "react-thunk": "1.0.0",
     "redux": "4.0.5",
-    "redux-mock-store": "1.5.4",
-    "redux-thunk": "2.3.0",
     "styled-components": "5.1.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "5.3.18",
+    "@storybook/react": "5.3.18",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "react-scripts": "3.4.1",
+    "redux-mock-store": "1.5.4",
+    "redux-thunk": "2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
