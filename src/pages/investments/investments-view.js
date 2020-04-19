@@ -2,7 +2,7 @@ import React from 'react';
 import DataFilter from '../../components/data-filter';
 import PeriodInfo from '../../components/period-info';
 import InvestmentsChart from '../../components/investments-chart';
-import { Container, FilterRow } from './investments-styles';
+import { Container, FilterRow } from './investments-view.styles';
 
 export default function InvestmentsView({
   labels,

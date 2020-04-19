@@ -3,7 +3,7 @@ import {
   SelectWrapper,
   Select,
   Option,
-} from './data-filter-styles';
+} from './data-filter-view.styles';
 
 export default function DataFilterView({
   options,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper } from './period-info-styles';
+import { Wrapper } from './period-info-view.styles';
 
 export default function PeriodInfoView({
   periodSelected
