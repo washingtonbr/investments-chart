@@ -6,7 +6,7 @@ exports[`PeriodInfoView renders correctly 1`] = `
 >
   Você está vendo o período 
   <strong>
-    desde o início
+    Desde o início
   </strong>
   .
 </div>

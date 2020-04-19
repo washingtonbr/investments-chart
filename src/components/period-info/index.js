@@ -1,1 +1,1 @@
-export { default } from './period-info-view';
+export { default } from './period-info-container';

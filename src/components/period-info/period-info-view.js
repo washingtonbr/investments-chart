@@ -1,10 +1,12 @@
 import React from 'react';
 import { Wrapper } from './period-info-styles';
 
-export default function PeriodInfoView() {
+export default function PeriodInfoView({
+  periodSelected
+}) {
   return (
     <Wrapper>
-      Você está vendo o período <strong>desde o início</strong>.
+      Você está vendo o período <strong>{periodSelected}</strong>.
     </Wrapper>
   );
 }
