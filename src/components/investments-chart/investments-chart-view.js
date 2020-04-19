@@ -78,11 +78,11 @@ export default function InvestmentsChartView({
     },
   };
 
-  return (
+  return data.length ? (
     <Chart
       type={chartType}
       data={chartData}
       options={chartOptions}
     />
-  );
+  ) : (<>Não há dados para o período selecionado.</>);
 }
