@@ -1,5 +1,5 @@
 import React from 'react';
-import InvestmentsChart from '../../components/investments-chart';
+import InvestmentsView from '../../components/investments-chart';
 import { mockLabels, mockData } from './investments-view.mock';
 
 export default {
@@ -7,7 +7,7 @@ export default {
 };
 
 export const standard = () => (
-  <InvestmentsChart
+  <InvestmentsView
     labels={mockLabels}
     data={mockData}
   />

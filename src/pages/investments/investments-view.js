@@ -4,7 +4,7 @@ import PeriodInfo from '../../components/period-info';
 import InvestmentsChart from '../../components/investments-chart';
 import { Container, FilterRow } from './investments-styles';
 
-export default function InvestmentView({
+export default function InvestmentsView({
   labels,
   data,
 }) {
