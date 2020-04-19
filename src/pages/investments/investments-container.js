@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchInvestments } from '../../redux/investments/actions';
-import { getInvestmentsFiltered } from '../../redux/investments/selectors';
+import { getInvestmentsFiltered, isFetching } from '../../redux/investments/selectors';
 import InvestmentsView from './investments-view';
 
 export default function InvestmentContainer() {
@@ -16,6 +16,7 @@ export default function InvestmentContainer() {
     <InvestmentsView
       labels={investmentsData.map((item) => item[0])}
       data={investmentsData.map((item) => item[1])}
+      isFetching={useSelector(isFetching)}
     />
   );
 }

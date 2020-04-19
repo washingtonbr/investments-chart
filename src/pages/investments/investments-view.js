@@ -7,6 +7,7 @@ import { Container, FilterRow } from './investments-styles';
 export default function InvestmentsView({
   labels,
   data,
+  isFetching,
 }) {
   return (
     <Container>
@@ -16,10 +17,11 @@ export default function InvestmentsView({
 
       <PeriodInfo />
 
-      <InvestmentsChart
-        labels={labels}
-        data={data}
-      />
+      {isFetching ? 'Carregando...' :
+        <InvestmentsChart
+          labels={labels}
+          data={data}
+        />}
     </Container>
   );
 }

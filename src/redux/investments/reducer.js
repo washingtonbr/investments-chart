@@ -28,6 +28,7 @@ export default function (state = initialState, action) {
       const { items } = action.payload;
       return {
         ...state,
+        isFetching: false,
         items,
       };
 
@@ -35,6 +36,7 @@ export default function (state = initialState, action) {
       const { error } = action.payload;
       return {
         ...state,
+        isFetching: false,
         error,
       };
 
