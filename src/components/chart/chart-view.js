@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Chart from 'chart.js';
+import { objEquals } from '../../utils/obj';
 
 export default function ChartView({
 	type,
@@ -8,16 +9,29 @@ export default function ChartView({
   width = 100,
   height = 55,
 }) {
+  const [chart, setChart] = useState();
   const canvasElm = useRef(null);
 
   useEffect(() => {
     const ctx = canvasElm.current.getContext('2d');
-    new Chart(ctx, {
+    const newChart = new Chart(ctx, {
 			type,
-			data,
       options,
-		});
-  }, [type, data, options]);
+			data: {},
+    });
+
+    setChart(newChart);
+  }, [type, options]);
+
+  useEffect(() => {
+    if (!chart || objEquals(chart.data.labels, data.labels))
+      return;
+
+    const newChart = Object.assign(chart, {});
+    newChart.data = data;
+    newChart.update();
+    setChart(newChart);
+  }, [chart, data]);
 
   return (
     <canvas
