@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setPeriodSelected } from '../../redux/investments/actions';
-import { getInvestments } from '../../redux/investments/selectors';
 import DataFilterView from './data-filter-view';
 import { date } from '../../utils/date';
 
 export default function DataFilterContainer() {
-  const investmentsData = useSelector(getInvestments);
   const dispatch = useDispatch();
   const [options, setOptions] = useState([]);
   const [periodList] = useState([
@@ -23,7 +21,7 @@ export default function DataFilterContainer() {
       startDate: date().subtract(12, 'month').valueOf(),
     },
     {
-      label: '2 ano',
+      label: '2 anos',
       startDate: date().subtract(24, 'month').valueOf(),
     },
   ]);
@@ -34,9 +32,6 @@ export default function DataFilterContainer() {
   }
 
   useEffect(() => {
-    if (!investmentsData.length) return;
-    const [firstDate] = investmentsData[0];
-    const [lastDate] = investmentsData[investmentsData.length - 1];
     const endDate = date().valueOf();
     const newOptions = [
       {
@@ -48,18 +43,15 @@ export default function DataFilterContainer() {
 
     periodList.forEach((period) => {
       const { label, startDate } = period;
-      if (date(firstDate).isSameOrAfter(startDate) &&
-        date(lastDate).isSameOrBefore(endDate)) {
-        newOptions.push({
-          label,
-          startDate,
-          endDate,
-        });
-      }
+      newOptions.push({
+        label,
+        startDate,
+        endDate,
+      });
     });
 
     setOptions(newOptions);
-  }, [investmentsData, periodList]);
+  }, [periodList]);
 
   return (
     <DataFilterView
