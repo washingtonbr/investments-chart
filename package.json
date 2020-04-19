@@ -8,6 +8,7 @@
     "chart.js": "2.9.3",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
+    "moment": "2.24.0",
     "normalize.css": "8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
