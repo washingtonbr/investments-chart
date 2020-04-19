@@ -6,11 +6,11 @@ import { addDecorator } from '@storybook/react';
 import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux'
 import { Wrapper } from '../src/components/app/app-view.styles';
-import { mockInitialState } from '../src/redux/store.mock';
+import { mockReduxState } from '../src/redux/store.mock';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
-const reduxStore = mockStore(mockInitialState);
+const reduxStore = mockStore(mockReduxState);
 
 const StorybookWrapper = (storyFn) => (
   <Provider store={reduxStore}>

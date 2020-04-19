@@ -1,4 +1,4 @@
-export const mockInitialState = {
+export const mockReduxState = {
   investments: {
     isFetching: false,
     error: {},
