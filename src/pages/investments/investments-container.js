@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchInvestments } from '../../redux/investments/actions';
+import { getInvestmentsFiltered } from '../../redux/investments/selectors';
 import InvestmentsView from './investments-view';
 
 export default function InvestmentContainer() {
-  const labels = ['10 JUN 2017', '', '', '', '', '', '', '', '', '', '15 ABR 2019'];
-  const data = [900, 1200, 2100, 3800, 2900, 5600, 6600, 7400, 7200, 8000, 9400];
+  const investmentsData = useSelector(getInvestmentsFiltered);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchInvestments());
+  }, [dispatch]);
 
   return (
     <InvestmentsView
-      labels={labels}
-      data={data}
+      labels={investmentsData.map((item) => item[0])}
+      data={investmentsData.map((item) => item[1])}
     />
   );
 }
