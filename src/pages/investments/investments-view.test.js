@@ -1,17 +1,44 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { useSelector } from 'react-redux';
+import { date } from '../../utils/date';
 import InvestmentsView from './investments-view';
-import { mockLabels, mockData } from './investments-view.mock';
+import {
+  mockLabels,
+  mockData,
+  mockisFetching,
+  mockInvestmentsState,
+  mockTimestamp,
+} from './investments-view.mock';
 
-jest.mock('../../utils/date');
+jest.mock('react-redux', () => ({
+  useSelector: jest.fn()
+    .mockReturnValueOnce({})
+    .mockReturnValueOnce(() => mockInvestmentsState),
+  useDispatch: jest.fn(),
+}));
+
+jest.mock('../../utils/date', () => ({
+  date: jest.fn().mockImplementation(() => ({
+    subtract: jest.fn().mockImplementation(() => ({
+      valueOf: jest.fn().mockImplementation(() => mockTimestamp),
+    })),
+  })),
+}));
 
 describe('InvestmentsView', () => {
-  xit('renders correctly', () => {
+  afterEach(() => {
+    useSelector.mockClear();
+    date.mockClear();
+  });
+
+  it('renders correctly', () => {
     const tree = renderer
       .create(
         <InvestmentsView
           labels={mockLabels}
           data={mockData}
+          isFetching={mockisFetching}
         />
       )
       .toJSON();

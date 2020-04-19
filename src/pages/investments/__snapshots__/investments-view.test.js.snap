@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvestmentsView renders correctly 1`] = `
+<div
+  className="sc-AxhUy bnBzHX"
+>
+  <div
+    className="sc-AxgMl jDCFvF"
+  >
+    <div
+      className="sc-AxjAm bDujyt"
+    >
+      <select
+        className="sc-AxirZ iEPwaG"
+        onChange={[Function]}
+      />
+    </div>
+  </div>
+  <canvas
+    height={55}
+    width={100}
+  />
+</div>
+`;

@@ -27,3 +27,18 @@ export const mockData = [
 ];
 
 export const mockisFetching = false;
+
+export const mockInvestmentsState = {
+  investments: {
+    isFetching: false,
+    error: {},
+    periodSelected: {
+      label: 'Desde o início',
+      startDate: null,
+      endDate: null,
+    },
+    items: [],
+  },
+};
+
+export const mockTimestamp = '1587311825893';
