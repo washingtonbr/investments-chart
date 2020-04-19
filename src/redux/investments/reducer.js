@@ -9,6 +9,7 @@ const initialState = {
   isFetching: false,
   error: {},
   periodSelected: {
+    label: 'Desde o início',
     startDate: null,
     endDate: null,
   },
@@ -38,10 +39,11 @@ export default function (state = initialState, action) {
       };
 
       case SET_PERIOD_SELECTED:
-        const { startDate, endDate } = action.payload;
+        const { label, startDate, endDate } = action.payload;
         return {
           ...state,
           periodSelected: {
+            label,
             startDate,
             endDate,
           },

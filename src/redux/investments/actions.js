@@ -33,9 +33,10 @@ export const fetchInvestments = () => (dispatch) => {
     .catch((error) => dispatch(fetchInvestmentsFailure(error)));
 };
 
-export const setPeriodSelected = (startDate, endDate) => ({
+export const setPeriodSelected = (label, startDate, endDate) => ({
   type: SET_PERIOD_SELECTED,
   payload: {
+    label,
     startDate,
     endDate,
   },
