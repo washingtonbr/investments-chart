@@ -47,7 +47,9 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!<rootDir>/node_modules/",
-      "!src/**/*.stories.js"
+      "!src/**/*.stories.js",
+      "!src/**/*.mock.js",
+      "!src/**/*.styles.js"
     ]
   }
 }
