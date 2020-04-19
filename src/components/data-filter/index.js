@@ -1,1 +1,1 @@
-export { default } from './data-filter-view';
+export { default } from './data-filter-container';

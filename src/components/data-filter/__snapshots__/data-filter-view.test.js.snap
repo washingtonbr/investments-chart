@@ -2,36 +2,41 @@
 
 exports[`DataFilterView renders correctly 1`] = `
 <div
-  className="sc-AxjAm sjXNp"
+  className="sc-AxjAm bDujyt"
 >
   <select
-    className="sc-AxirZ ka-doDy"
+    className="sc-AxirZ iEPwaG"
+    onChange={[Function]}
   >
     <option
       className="sc-AxiKw kgEfKZ"
-      selected={true}
+      value={0}
     >
       Desde o início
     </option>
     <option
       className="sc-AxiKw kgEfKZ"
+      value={1}
     >
       Último mês
     </option>
     <option
       className="sc-AxiKw kgEfKZ"
+      value={2}
     >
       3 meses
     </option>
     <option
       className="sc-AxiKw kgEfKZ"
+      value={3}
     >
       1 ano
     </option>
     <option
       className="sc-AxiKw kgEfKZ"
+      value={4}
     >
-      2 anos
+      2 ano
     </option>
   </select>
 </div>

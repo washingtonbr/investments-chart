@@ -5,15 +5,20 @@ import {
   Option,
 } from './data-filter-styles';
 
-export default function DataFilterView() {
+export default function DataFilterView({
+  options,
+  setPeriod,
+}) {
   return (
     <SelectWrapper>
-      <Select>
-        <Option selected>Desde o início</Option>
-        <Option>Último mês</Option>
-        <Option>3 meses</Option>
-        <Option>1 ano</Option>
-        <Option>2 anos</Option>
+      <Select onChange={(e) => setPeriod(e.target.value)}>
+        {options.map((option, index) => (
+          <Option
+            key={`option${index}`}
+            value={index}>
+            {option.label}
+          </Option>
+        ))}
       </Select>
     </SelectWrapper>
   );
