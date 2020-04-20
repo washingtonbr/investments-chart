@@ -1,12 +1,16 @@
-import React from 'react';
 import 'normalize.css';
-import Routes from '../routes';
+import React from 'react';
+import { Provider } from 'react-redux';
 import { Wrapper } from './app-view.styles';
+import Routes from '../routes';
+import store from '../../redux/store';
 
 export default function AppView() {
   return (
-    <Wrapper>
-      <Routes />
-    </Wrapper>
+    <Provider store={store}>
+      <Wrapper>
+        <Routes />
+      </Wrapper>
+    </Provider>
   );
 }
