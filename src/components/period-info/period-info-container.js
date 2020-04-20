@@ -6,7 +6,7 @@ import { getPeriodSelected } from '../../redux/investments/selectors';
 export default function PeriodInfoContainer() {
   const periodSelected = useSelector(getPeriodSelected);
 
-  return periodSelected.label ? (
+  return periodSelected && periodSelected.label ? (
     <PeriodInfoView
       periodSelected={periodSelected.label}
     />
