@@ -1,8 +1,14 @@
-import moment from 'moment';
-import 'moment/locale/pt-br';
+import dayjs from 'dayjs';
+import 'dayjs/locale/pt-br';
+import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
+import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
 
-moment.updateLocale('pt-BR');
+export function configDate() {
+  dayjs.locale('pt-br');
+  dayjs.extend(isSameOrAfter);
+  dayjs.extend(isSameOrBefore);
+}
 
 export function date(date) {
-  return moment(date);
+  return dayjs(date);
 }
