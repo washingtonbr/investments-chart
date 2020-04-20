@@ -14,7 +14,7 @@ const mockObjB = {
 
 describe('obj', () => {
   it('should returns truth for equal objects', () => {
-    expect(objEquals(mockObjA, mockObjADuplicated)).toBeTruth();
+    expect(objEquals(mockObjA, mockObjADuplicated)).toBeTruthy();
   });
 
   it('should returns falsy for different objects', () => {
