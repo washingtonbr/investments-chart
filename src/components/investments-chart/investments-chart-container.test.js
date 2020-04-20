@@ -24,7 +24,7 @@ jest.mock('../../utils/date', () => ({
 }));
 
 describe('InvestmentsChartContainer', () => {
-  it('Should format the date of the first and last item and hide the others', () => {
+  it('should format the date of the first and last item and hide the others', () => {
     const wrapper = shallow(
       <InvestmentsChartContainer
         labels={mockLabels}
@@ -40,7 +40,7 @@ describe('InvestmentsChartContainer', () => {
     expect(viewProps.xAxesTicksCallback(mockTimestamp, mockLastIndex, mockLabels)).toEqual(mockFormattedDate);
   });
 
-  it('Should format the numbers divisib;le by three and hide the others', () => {
+  it('should format the numbers divisib;le by three and hide the others', () => {
     const wrapper = shallow(
       <InvestmentsChartContainer
         labels={mockLabels}
