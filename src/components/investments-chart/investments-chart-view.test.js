@@ -8,13 +8,13 @@ import {
 
 jest.mock('../../utils/date');
 
-describe('InvestmentsChart', () => {
+describe('InvestmentsChartView', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(
         <InvestmentsChart
-        labels={mockLabels}
-        data={mockData}
+          labels={mockLabels}
+          data={mockData}
         />,
       )
       .toJSON();

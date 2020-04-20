@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InvestmentsChart renders correctly 1`] = `
+exports[`InvestmentsChartView renders correctly 1`] = `
 <canvas
   height={55}
   width={100}
