@@ -9,6 +9,8 @@ import { mockReduxState } from '../../redux/store.mock';
 import RoutesContainer from './routes-container';
 import InvestmentsPage from '../../pages/investments';
 
+jest.mock('../../pages/investments', () => () => <></>);
+
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 const reduxStore = mockStore(mockReduxState);
