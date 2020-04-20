@@ -5,7 +5,7 @@ exports[`AppView renders correctly 1`] = `
   className="sc-AxjAm fYZJlX"
 >
   <div
-    className="sc-AxgMl jCMjGN"
+    className="sc-AxgMl bvMxkL"
   >
     <div
       className="sc-AxheI dUbsWX"
@@ -21,7 +21,7 @@ exports[`AppView renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-AxhUy blYzjI"
+      className="sc-AxhUy hsCuXZ"
     >
       Você está vendo o período 
       <strong>
