@@ -1,1 +1,1 @@
-export { default } from './investments-chart-view';
+export { default } from './investments-chart-container';

@@ -25,3 +25,15 @@ export const mockData = [
   54866.23,
   84750.88,
 ];
+
+export const mockTimestamp = 1565308800000;
+
+export const mockFormattedDate = '08 AGO 2019';
+
+export const mockValue = 24960;
+
+export const mockFormattedValue = '24.96K';
+
+export const mockFirstIndex = 0;
+
+export const mockLastIndex = mockLabels.length - 1;
