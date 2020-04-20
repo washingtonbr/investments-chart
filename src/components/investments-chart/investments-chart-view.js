@@ -1,10 +1,11 @@
 import React from 'react';
-import { date } from '../../utils/date';
 import Chart from '../chart';
 
 export default function InvestmentsChartView({
   labels,
   data,
+  xAxesTicksCallback,
+  yAxesTicksCallback,
 }) {
   const chartType = 'line';
   const chartData = {
@@ -43,10 +44,7 @@ export default function InvestmentsChartView({
             color: 'rgba(0,0,0,0)',
           },
           ticks: {
-            callback: function(item, index, list) {
-              if (index === 0 || index === list.length - 1)
-                return date(item).format('DD MMM YYYY').toUpperCase();
-            },
+            callback: xAxesTicksCallback,
             fontSize: 11,
             padding: 10,
             fontColor: '#8C9DAA',
@@ -64,9 +62,7 @@ export default function InvestmentsChartView({
             color: 'rgba(87,112,130,0.08)',
           },
           ticks: {
-            callback: function(value, index) {
-              if (!(index % 3)) return `${value / 1000}K`;
-            },
+            callback: yAxesTicksCallback,
             autoSkip: false,
             fontSize: 14,
             padding: 10,
