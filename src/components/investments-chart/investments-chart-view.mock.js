@@ -37,3 +37,15 @@ export const mockFormattedValue = '24.96K';
 export const mockFirstIndex = 0;
 
 export const mockLastIndex = mockLabels.length - 1;
+
+export const mockTitleTooltipItem = [
+  {
+    label: '1565308800000',
+  }
+];
+
+export const mockLabelTooltipItem = {
+  label: '24960',
+};
+
+export const mockTooltipLabel = 'R$\xa024,960.00';

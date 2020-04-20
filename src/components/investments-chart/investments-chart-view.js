@@ -4,6 +4,8 @@ import Chart from '../chart';
 export default function InvestmentsChartView({
   labels,
   data,
+  tooltipsTitleCallback,
+  tooltipsLabelCallback,
   xAxesTicksCallback,
   yAxesTicksCallback,
 }) {
@@ -28,8 +30,13 @@ export default function InvestmentsChartView({
       display: false,
     },
     tooltips: {
+      callbacks: {
+        title: tooltipsTitleCallback,
+        label: tooltipsLabelCallback,
+      },
       mode: 'index',
       intersect: false,
+      displayColors: false
     },
     hover: {
       mode: 'nearest',

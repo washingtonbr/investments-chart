@@ -15,6 +15,10 @@ describe('InvestmentsChartView', () => {
         <InvestmentsChart
           labels={mockLabels}
           data={mockData}
+          tooltipsTitleCallback={() => {}}
+          tooltipsLabelCallback={() => {}}
+          xAxesTicksCallback={() => {}}
+          yAxesTicksCallback={() => {}}
         />,
       )
       .toJSON();
