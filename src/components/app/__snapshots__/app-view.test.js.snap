@@ -16,6 +16,7 @@ exports[`AppView renders correctly 1`] = `
         <select
           className="sc-AxiKw esaJYC"
           onChange={[Function]}
+          value={-1}
         />
       </div>
     </div>

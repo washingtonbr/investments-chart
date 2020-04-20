@@ -7,6 +7,7 @@ exports[`DataFilterView renders correctly 1`] = `
   <select
     className="sc-AxirZ iEPwaG"
     onChange={[Function]}
+    value={0}
   >
     <option
       className="sc-AxiKw kgEfKZ"

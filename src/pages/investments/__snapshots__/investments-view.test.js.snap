@@ -13,6 +13,7 @@ exports[`InvestmentsView renders correctly 1`] = `
       <select
         className="sc-AxirZ iEPwaG"
         onChange={[Function]}
+        value={-1}
       />
     </div>
   </div>
