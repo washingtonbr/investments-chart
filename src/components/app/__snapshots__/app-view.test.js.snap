@@ -32,36 +32,3 @@ exports[`AppView renders correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`Chart renders correctly 1`] = `
-<div
-  className="sc-AxjAm fYZJlX"
->
-  <div
-    className="sc-AxgMl jCMjGN"
-  >
-    <div
-      className="sc-AxheI dUbsWX"
-    >
-      <div
-        className="sc-AxirZ ejVXsm"
-      >
-        <select
-          className="sc-AxiKw esaJYC"
-          onChange={[Function]}
-        />
-      </div>
-    </div>
-    <div
-      className="sc-AxhUy blYzjI"
-    >
-      Você está vendo o período 
-      <strong>
-        Desde o início
-      </strong>
-      .
-    </div>
-    Não há dados para o período selecionado.
-  </div>
-</div>
-`;
