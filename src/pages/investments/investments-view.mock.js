@@ -1,3 +1,46 @@
+export const mockInvestments = [
+  [
+    1565308800000,
+    24960,
+  ],
+  [
+    1565568000000,
+    24960,
+  ],
+  [
+    1565654400000,
+    24963.28,
+  ],
+  [
+    1565740800000,
+    24966.55,
+  ],
+  [
+    1565827200000,
+    24969.83,
+  ],
+  [
+    1565913600000,
+    24973.11,
+  ],
+  [
+    1566172800000,
+    24976.39,
+  ],
+  [
+    1566259200000,
+    24979.67,
+  ],
+  [
+    1566345600000,
+    24982.95,
+  ],
+  [
+    1566432000000,
+    54866.23,
+  ],
+];
+
 export const mockLabels = [
   1565308800000,
   1565568000000,
@@ -9,7 +52,6 @@ export const mockLabels = [
   1566259200000,
   1566345600000,
   1566432000000,
-  1566518400000,
 ];
 
 export const mockData = [
@@ -23,22 +65,8 @@ export const mockData = [
   24979.67,
   24982.95,
   54866.23,
-  84750.88,
 ];
 
 export const mockisFetching = false;
-
-export const mockInvestmentsState = {
-  investments: {
-    isFetching: false,
-    error: {},
-    periodSelected: {
-      label: 'Desde o início',
-      startDate: null,
-      endDate: null,
-    },
-    items: [],
-  },
-};
 
 export const mockTimestamp = '1587311825893';

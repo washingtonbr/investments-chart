@@ -7,14 +7,14 @@ import {
   mockLabels,
   mockData,
   mockisFetching,
-  mockInvestmentsState,
   mockTimestamp,
 } from './investments-view.mock';
 
+jest.mock('../../redux/investments/selectors');
+
 jest.mock('react-redux', () => ({
   useSelector: jest.fn()
-    .mockReturnValueOnce({})
-    .mockReturnValueOnce(() => mockInvestmentsState),
+    .mockReturnValueOnce((f) => f()),
   useDispatch: jest.fn(),
 }));
 
