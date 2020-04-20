@@ -1,3 +1,5 @@
+export const mockPeriodSelected = 0;
+
 export const mockOptions = [
   {
     label: 'Desde o início',

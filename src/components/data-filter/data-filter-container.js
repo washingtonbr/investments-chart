@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setPeriodSelected } from '../../redux/investments/actions';
+import { getPeriodSelected } from '../../redux/investments/selectors';
 import DataFilterView from './data-filter-view';
 import { date } from '../../utils/date';
 
 export default function DataFilterContainer() {
   const dispatch = useDispatch();
+  const periodSelected = useSelector(getPeriodSelected);
   const [options, setOptions] = useState([]);
   const [periodList] = useState([
     {
@@ -55,6 +57,7 @@ export default function DataFilterContainer() {
 
   return (
     <DataFilterView
+      periodSelected={options.findIndex(item => item.label === periodSelected.label)}
       options={options}
       setPeriod={setPeriod}
     />

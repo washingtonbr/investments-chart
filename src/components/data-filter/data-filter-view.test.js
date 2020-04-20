@@ -2,7 +2,10 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import DataFilterView from './data-filter-view';
-import { mockOptions } from './data-filter-view.mock';
+import {
+  mockPeriodSelected,
+  mockOptions,
+} from './data-filter-view.mock';
 import { Select } from './data-filter-view.styles';
 
 const mockSetPeriod = jest.fn();
@@ -12,6 +15,7 @@ describe('DataFilterView', () => {
     const tree = renderer
       .create(
         <DataFilterView
+          periodSelected={mockPeriodSelected}
           options={mockOptions}
           setPeriod={mockSetPeriod}
         />
@@ -24,6 +28,7 @@ describe('DataFilterView', () => {
   test('should call setPeriod function', () => {
     const wrapper = shallow(
       <DataFilterView
+        periodSelected={mockPeriodSelected}
         options={mockOptions}
         setPeriod={mockSetPeriod}
       />,
