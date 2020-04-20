@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "chart.js": "2.9.3",
-    "dayjs": "^1.8.24",
+    "dayjs": "1.8.24",
     "normalize.css": "8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -12,7 +12,7 @@
     "react-router-dom": "5.1.2",
     "react-thunk": "1.0.0",
     "redux": "4.0.5",
-    "redux-persist": "^6.0.0",
+    "redux-persist": "6.0.0",
     "styled-components": "5.1.0"
   },
   "devDependencies": {
