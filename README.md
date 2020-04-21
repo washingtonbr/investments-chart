@@ -3,6 +3,8 @@
 ### Visão geral
 Este é um projeto exemplo feito em React. Foram criados testes unitários e testes de integração usando Jest e Enzyme. Redux e Redux Persist foram utilizados para ter manter um estado global da aplicação e persistir os dados, respectivamente. A lib de gráficos utilizada foi o Chart.js.
 
+![Investments Chart](./screenshot.png)
+
 ## Scripts
 
 **Pré-requisito: É necessário ter a última versão LTS do Node.js instalado.**
